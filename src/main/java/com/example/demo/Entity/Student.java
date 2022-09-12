@@ -26,8 +26,21 @@ public class Student {
     private String address;
     @Column(name = "Phone")
     private String phone;
+    @Column(name = "maNganh")
+    private String nganh;
 
-
+    public Student(String id, String name, LocalDate birthDay, String gender, String ethnic, String email, String cccd, String address, String phone, String nganh) {
+        this.id = id;
+        Name = name;
+        this.birthDay = birthDay;
+        Gender = gender;
+        Ethnic = ethnic;
+        this.email = email;
+        this.cccd = cccd;
+        this.address = address;
+        this.phone = phone;
+        this.nganh = nganh;
+    }
 
     public String getId() {
         return id;
@@ -99,5 +112,13 @@ public class Student {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getNganh() {
+        return nganh;
+    }
+
+    public void setNganh(String nganh) {
+        this.nganh = nganh;
     }
 }
